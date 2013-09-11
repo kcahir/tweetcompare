@@ -58,13 +58,17 @@ class TweetsRepository implements ServiceRepositoryInterface
 
 		/* some twitter error responses give different result object */
 		if (isset($this->timeline->errors) && count($this->timeline->errors)) {
+			
 		    $this->error = $this->timeline->errors;
 
 		    return false;
+		    
 		} elseif (isset($this->timeline->error)) {
+			
 		    $this->error = array(array("message"=>$this->timeline->error));
 
 		    return false;
+		    
 		} else {
 
 			$this->processTweets();
