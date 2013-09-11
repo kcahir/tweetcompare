@@ -39,7 +39,7 @@ Run `php artisan asset:publish kcahir/tweetcompare`
 
 ## Configuration
 
-Run `php artisan config:publish thujohn/twitter` and modify the config file at `app/config/packages/thujohn/twitter/config.php` with your own informations.
+Run `php artisan config:publish thujohn/twitter` and modify the config file at `app/config/packages/thujohn/twitter/config.php` with your own information.
 
 ## Final Step
 
