@@ -41,4 +41,4 @@ Run `php artisan config:publish thujohn/twitter` and modify the config file with
 
 Go to `app/routes.php` and remove the default route shown.
 
-Now navigate to the 'public/' directory in your browser.
+Now navigate to the `public/` directory in your browser.
