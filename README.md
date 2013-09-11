@@ -1,4 +1,4 @@
-tweetcompare
+Tweetcompare
 ============
 
 Compare user tweet statistics in Laravel 4
@@ -12,7 +12,7 @@ Add `kcahir/tweetcompare` to `composer.json`.
 
     "kcahir/tweetcompare": "dev-master"
 
-Run `composer update` to pull down the latest version of Twitter.
+Run `composer update` to pull down the latest version of Tweetcompare.
 
 Now open up `app/config/app.php` and add the service provider to your `providers` array.
 
