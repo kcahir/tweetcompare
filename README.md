@@ -1,7 +1,7 @@
 tweetcompare
 ============
 
-Twitter Statistics for Laravel 4
+Compare user tweet statistics in Laravel 4
 
 You need to create an application and create your access token in the [developer console](https://dev.twitter.com/).
 
