@@ -17,8 +17,8 @@ Run `composer update` to pull down the latest version of Tweetcompare.
 Now open up `app/config/app.php` and add the service provider to your `providers` array.
 
     'providers' => array(
+    	'Kcahir\Tweetcompare\TweetcompareServiceProvider',
 	    'Toin0u\Geotools\GeotoolsServiceProvider',
-		'Kcahir\Tweetcompare\TweetcompareServiceProvider'
         'Thujohn\Twitter\TwitterServiceProvider',
     )
 
