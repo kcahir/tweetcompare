@@ -40,7 +40,6 @@
 					</span>
 
 				</div>
-				<!-- <br /><small>Press + to add another form field :)</small> -->
 			</div>
 		</div>
 	</form>
