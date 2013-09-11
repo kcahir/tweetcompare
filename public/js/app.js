@@ -24,6 +24,8 @@ var twitterApp = function(opts){
 
 		if(account==='') return false;
 
+		account = account.replace('@','');
+
 		// Adding the active class to the form
 		$form.addClass('active');
 
