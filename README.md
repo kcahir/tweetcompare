@@ -8,6 +8,8 @@ You need to create a Twitter application and create your access token in the [de
 
 ## Installation
 
+You can start by `composer create-project laravel/laravel --prefer-dis` to install [laravel](http://laravel.com/docs/installation/).
+
 Add `kcahir/tweetcompare` to `composer.json`.
 
     "kcahir/tweetcompare": "dev-master"
