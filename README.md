@@ -36,3 +36,9 @@ Run `php artisan asset:publish kcahir/tweetcompare`
 ## Configuration
 
 Run `php artisan config:publish thujohn/twitter` and modify the config file with your own informations.
+
+## Final Step
+
+Go to `app/routes.php` and remove the default route shown.
+
+Now navigate to the 'public/' directory in your browser.
