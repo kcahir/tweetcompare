@@ -59,7 +59,7 @@
 				<li><small>To add a new account, enter the Twitter username and hit +</small></li>
 				<li><small>The app will attempt to retreive up to 200 of the users most recent tweets.</small></li>
 				<li><small><b>Max Distance</b> shows the maximum distance spanned between any two tweets in the sample that were made with <em>Geo Location</em> data switched on.</small></li>
-				<li><small><b>Avg sent in a work day</b> shows the average number of tweets the user will make on a workday between the hours of 9am - 5:30pm</small></li>
+				<li><small><b>Avg sent in a work day</b> shows the average number of tweets the user will make on a workday between the hours of 9am - 5:30pm. Workdays after the most recent tweet are not considered.</small></li>
 				<li><small><b>Spelling (and grammar) Mistake Freq</b> is calculated from a random sampling of up to 10 tweets.</small></li>
 			</ul>
 			<hr />
