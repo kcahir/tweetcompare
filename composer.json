@@ -1,0 +1,31 @@
+{
+    "name": "kcahir/tweetcompare",
+    "description": "",
+    "authors": [
+        {
+            "name": "kieran cahir",
+            "email": "kcahir@ymail.com"
+        },
+        {
+            "name": "Abdellatif Ait boudad",
+            "email": "a.aitboudad@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x",
+        "thujohn/twitter": "dev-master",
+        "toin0u/geotools-laravel": "0.2.*@dev",
+        "guzzle/guzzle": ">=3.0, <3.4"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations",
+            "src/Kcahir/Tweetcompare/Repositories/TweetsRepository.php"
+        ],
+        "psr-0": {
+            "Kcahir\\Tweetcompare": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
