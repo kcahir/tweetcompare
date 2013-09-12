@@ -198,9 +198,12 @@ class TweetsRepository implements ServiceRepositoryInterface
 	protected function calculateMaxDistance()
 	{
 		$this->numLocations = count($this->coords);
+		
 		for ($i = 0; $i < $this->numLocations - 1; $i++) {
+			
+			$coordA = Geotools::coordinate($this->coords[$i]);
+			
 		    for ($j = $i + 1; $j < $this->numLocations; $j++) {
-		        $coordA = Geotools::coordinate($this->coords[$i]);
 		        $coordB = Geotools::coordinate($this->coords[$j]);
 		        $dist = Geotools::distance()->setFrom($coordA)->setTo($coordB);
 		        $this->maxDistance = ($dist->flat() > $this->maxDistance) ? $dist->flat() : $this->maxDistance;
