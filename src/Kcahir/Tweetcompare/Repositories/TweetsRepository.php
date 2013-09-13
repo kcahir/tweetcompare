@@ -58,17 +58,17 @@ class TweetsRepository implements ServiceRepositoryInterface
 
 		/* some twitter error responses give different result object */
 		if (isset($this->timeline->errors) && count($this->timeline->errors)) {
-			
+
 		    $this->error = $this->timeline->errors;
 
 		    return false;
-		    
+
 		} elseif (isset($this->timeline->error)) {
-			
+
 		    $this->error = array(array("message"=>$this->timeline->error));
 
 		    return false;
-		    
+
 		} else {
 
 			$this->processTweets();
@@ -198,9 +198,12 @@ class TweetsRepository implements ServiceRepositoryInterface
 	protected function calculateMaxDistance()
 	{
 		$this->numLocations = count($this->coords);
+
 		for ($i = 0; $i < $this->numLocations - 1; $i++) {
+
+			$coordA = Geotools::coordinate($this->coords[$i]);
+
 		    for ($j = $i + 1; $j < $this->numLocations; $j++) {
-		        $coordA = Geotools::coordinate($this->coords[$i]);
 		        $coordB = Geotools::coordinate($this->coords[$j]);
 		        $dist = Geotools::distance()->setFrom($coordA)->setTo($coordB);
 		        $this->maxDistance = ($dist->flat() > $this->maxDistance) ? $dist->flat() : $this->maxDistance;
