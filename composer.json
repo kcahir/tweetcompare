@@ -9,6 +9,7 @@
     ],
     "require": {
         "php": ">=5.3.0",
+        "illuminate/support": "4.x",
         "thujohn/twitter": "dev-master",
         "toin0u/geotools-laravel": "0.2.*@dev",
         "guzzle/guzzle": ">=3.0, <3.4"
